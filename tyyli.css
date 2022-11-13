@@ -1,1 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Courier New', Courier, monospace;
+}
 
+body {
+    background-image: linear-gradient(to top, #262626, #494949, #606060);
+    margin: 5% 5%;
+  }
+
+  .header {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: rgb(231, 193, 2);
+    text-shadow: 3px 1px black;
+}
+
+.footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
