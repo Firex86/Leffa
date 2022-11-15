@@ -10,7 +10,7 @@ body {
     margin: 5% 5%;
 }
 
-.header {
+header {
     font-size: 30px;
     text-align: center;
     margin: 0 0 50px 0;
@@ -18,11 +18,28 @@ body {
     text-shadow: 3px 1px black;
 }
 
-.footer{
+nav {
+
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: rgb(231, 193, 2);
+    text-shadow: 3px 1px black;
+}
+
+main {
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: rgb(231, 193, 2);
+    text-shadow: 3px 1px black;
+}
+
+footer{
 	position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 	text-align: center;
 	padding-bottom: 20px;
+    color: rgb(231, 193, 2);
+    
 }
