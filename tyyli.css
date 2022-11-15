@@ -6,11 +6,11 @@
 }
 
 body {
-    background-image: linear-gradient(to top, #262626, #494949, #606060);
+    background-image: linear-gradient(to right, #262626, #494949, #606060);
     margin: 5% 5%;
-  }
+}
 
-  .header {
+.header {
     font-size: 30px;
     text-align: center;
     margin: 0 0 50px 0;
