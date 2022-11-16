@@ -1,3 +1,7 @@
+window.addEventListener("load", function() {
+    loadXMLFile();
+});
+
 function loadXMLFile() {
     var xmlhttp = new XMLHttpRequest();
 
@@ -5,8 +9,9 @@ function loadXMLFile() {
     xmlhttp.send();
 
     xmlhttp.onreadystatechange = function() {
-        
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         document.getElementById("Sisältö").innerHTML = xmlhttp.responseText;
+        }
        
     }
 }
