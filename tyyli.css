@@ -5,11 +5,6 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-body {
-    background-image: linear-gradient(to right, #262626, #494949, #606060);
-    margin: 5% 5%;
-}
-
 header {
     font-size: 30px;
     text-align: center;
@@ -18,18 +13,11 @@ header {
     text-shadow: 3px 1px black;
 }
 
-main {
-    text-align: center;
-    margin: 0 0 50px 0;
-    color: rgb(231, 193, 2);
-    text-shadow: 3px 1px black;
+body {
+    background-image: linear-gradient(to right, #262626, #494949, #606060);
+    margin: 5% 5%;
 }
 
-#taulukko {
-    text-align: center;
-    padding-left: 25%;
-    back-ground: black;
-}
 /*Navigaatio*/
 .navigaatio{
 	background-color: rgb(231, 193, 2);
@@ -65,3 +53,42 @@ main {
 }
 .valikko a:hover {background-color: rgb(231, 193, 2);}
 .show{display:block}
+
+main {
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: rgb(231, 193, 2);
+    text-shadow: 3px 1px black;
+}
+
+
+#taulukko {
+    text-align: center;
+    padding-left: 25%;
+    back-ground: black;
+}
+
+#taulukko {
+    background: #606060;
+}
+
+
+#Elokuva {
+    font-size: 20px;
+    text-align: left;
+}
+
+#paikka {
+    font-size: 15px;
+    text-align: center;
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+    color: rgb(231, 193, 2);
+    
+}
