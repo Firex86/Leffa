@@ -23,7 +23,6 @@ nav {
     text-align: center;
     margin: 0 0 50px 0;
     color: rgb(231, 193, 2);
-    text-shadow: 3px 1px black;
 }
 
 main {
@@ -32,16 +31,22 @@ main {
     color: rgb(231, 193, 2);
     text-shadow: 3px 1px black;
 }
+
+#taulukko {
+    text-align: center;
+    padding-left: 25%;
+    back-ground: black;
+}
 /*Navigaatio*/
-.valikko{
-	background-color: #3498DB;
+.navigaatio{
+	background-color: rgb(231, 193, 2);
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
-.valikko:hover, .valikko:focus{
+.navigaatio:hover, .navigaatio:focus{
 	background-color: #2980B9;
 }
 .nav{
@@ -62,21 +67,5 @@ main {
   text-decoration: none;
   display: block;	
 }
-.valikko a:hover {background-color #ddd;}
+.valikko a:hover {background-color: rgb(231, 193, 2);}
 .show{display:block}
-footer{
-	position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-	text-align: center;
-	padding-bottom: 20px;
-    color: rgb(231, 193, 2);
-    
-}
-
-#taulukko {
-    text-align: center;
-    padding-left: 25%;
-    back-ground: black;
-}
