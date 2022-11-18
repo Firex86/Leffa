@@ -47,7 +47,5 @@ footer{
 #taulukko {
     text-align: center;
     padding-left: 25%;
-    border-radius: 1%;
-    border-color: rgb(231, 193, 2);
-    border-width: 5px;
+    back-ground: black;
 }
