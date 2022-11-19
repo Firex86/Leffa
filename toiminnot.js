@@ -49,3 +49,5 @@ function loadXMLFile() {
         txt += "</table>";
 
         document.getElementById("taulukko").innerHTML = txt;
+    }
+}
