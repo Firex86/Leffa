@@ -14,25 +14,28 @@
 	<header>
         <h1>Elokuvateatterit ja näytökset</h1>
     </header>
-//Navigaatio
-  <nav>
-		<div class="nav">
-		<button onclick="myFunction()" class="navigaatio">Valitse alue</button><div id="A" class="valikko">
-			<a id="Paakaupunkiseutu">Pääkaupunkiseutu</a>
-			<a id="Espoo">Espoo</a>
-			<a id="Helsinki">Helsinki</a>
-			<a id="Vantaa">Vantaa</a>
-						</div>
-		</div>
-        
-    </nav>
 
-	<main id="Sisältö">
-        
-    </main>
-        <div id="taulukko">
-            
-        </div>
+    <form name="ElokuvasaLista" id="ElokuvasaLista" >
+        Valitse alue tai teatteri:
+        <input id="Elokuvasalit" list="Teatterit" name ="Teatterit" onchange="TeatteriValinta()">
+        <datalist id="Teatterit">
+            <option value="Pääkaupunkiseutu"></option>
+            <option value="Espoo"></option>
+            <option value="Espoo: OMENA"></option>
+            <option value="Espoo: SELLO"></option>
+            <option value="Helsinki"></option>
+            <option value="Helsinki: ITIS"></option>
+            <option value="Helsinki: KINOPALATSI"></option>
+            <option value="Helsinki: MAXIM"></option>
+            <option value="Helsinki: TENNISPALATSI"></option>
+            <option value="Vantaa: FLAMINGO"></option>
+        </datalist>
+        <br><br>
+    </form>
+
+	<div id="taulukko">
+         <!--Tahan tulostetaan taulukko kayttajan haluamilla parametreilla-->   
+    </div>
 
 
 	<footer>
@@ -43,6 +46,3 @@
         <a href="https://github.com/Firex86/Leffa">Linkki lähdekoodiin</a>
     </footer>
 </body>
-
-
-</html>
