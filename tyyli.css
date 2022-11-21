@@ -1,3 +1,4 @@
+/* Yleiset muokkaukset */
 * {
     margin: 0;
     padding: 0;
@@ -18,61 +19,30 @@ body {
     margin: 5% 5%;
 }
 
-/*Navigaatio*/
-.navigaatio{
-	background-color: rgb(231, 193, 2);
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-.navigaatio:hover, .navigaatio:focus{
-	background-color: #2980B9;
-}
-.nav{
-	 text-align: center;
-    margin: 0 0 50px 0;
-    color: rgb(231, 193, 2);
-	position: relative;
-  	display: inline-block;
-}
-.valikko{
-	display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.valikko a{
-	 color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;	
-}
-.valikko a:hover {background-color: rgb(231, 193, 2);}
-.show{display:block}
-
-main {
+/* Ohjeiden muokkaus*/
+.ohjeet {
     text-align: center;
-    margin: 0 0 50px 0;
     color: rgb(231, 193, 2);
-    text-shadow: 3px 1px black;
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 
 
+/* Elokuvasali listauksen muokkaamista */
+#ElokuvasaLista {
+	text-align: center;
+	color: rgb(231, 193, 2);
+	font-size: 25px;
+}
+
+/* Muokataan taulukkoa */
 #taulukko {
     text-align: center;
 	font-size: 20px;
 	font-family: 'Courier New', Courier, monospace;
-    padding-left: 25%;
+    padding-left: 30%;
     color: rgb(231, 193, 2);
 }
-#taulukko {
-    background-color: #606060;
-}
-
 
 #Elokuva {
     font-size: 20px;
@@ -84,7 +54,22 @@ main {
     text-align: center;
 }
 
-footer{
+#otsikko {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#sali {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Footeri */
+footer {
+    margin-top: 35%;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -93,8 +78,4 @@ footer{
     color: rgb(231, 193, 2);
     
 }
-#ElokuvasaLista{
-	text-align: center;
-	color: rgb(231, 193, 2);
-	font-family: 'Courier New', Courier, monospace;
-}
+
