@@ -6,4 +6,4 @@ Sovellus käyttää Finnkinon julkaisemaa ja ylläpitämää XML databasea, jost
 
 # Ominaisuudet
 
-Tällä hetkellä ainut ominaisuus on elokuvien ja salien ajanmukaiset tiedot. Tarkoituksena on päivittää sovellukseen teatteri rajausmahdollisuus. Mahdollisesti tulossa lisää rajausmahdollisuuksia mikäli aikaa riittää.
+Sovelluksella on mahdollista suodattaa pääkaupunki seudun finnkino elokuvasalien tarjontaa. Sovellus näyttää suodatuksen jälkeen kyseisen salin päivän tarjonnan.
