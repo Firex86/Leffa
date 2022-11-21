@@ -64,12 +64,13 @@ main {
 
 #taulukko {
     text-align: center;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
     padding-left: 25%;
-    background: black;
+    color: rgb(231, 193, 2);
 }
-
 #taulukko {
-    background: #606060;
+    background-color: #606060;
 }
 
 
@@ -91,4 +92,9 @@ footer{
 	padding-bottom: 20px;
     color: rgb(231, 193, 2);
     
+}
+#ElokuvasaLista{
+	text-align: center;
+	color: rgb(231, 193, 2);
+	font-family: 'Courier New', Courier, monospace;
 }
