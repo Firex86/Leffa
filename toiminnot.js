@@ -55,10 +55,12 @@ function TeatteriValinta() {
     lataaXML();
  }
 
+   //Ladataan xml tiedot perustuen käyttäjän valintoihin
  function lataaXML() {
     if (TeatteriID != undefined){
        var osoite = "https://www.finnkino.fi/xml/Schedule/?area=" + TeatteriID + "&dt=" + date;
        var xhttp = new XMLHttpRequest();
+       //Tarkistetaan onko tiedosto latautunut oikein
        xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
           parseXML(this);
@@ -69,6 +71,7 @@ function TeatteriValinta() {
     }
  }
  
+   // Luodaan taulukko perustuen käyttäjän valintoihin
  function parseXML(xml) {
     var i;
     var xmlData = xml.responseXML;
@@ -83,7 +86,7 @@ function TeatteriValinta() {
              } else {
                 TaulukkoKuva = "<img id='ElokuvaKuva' src='" + Elokuva[i].getElementsByTagName("EventSmallImagePortrait")[0].childNodes[0].nodeValue + "'></img>";
              }
-          
+          // Taulukon aloitus
           table += "<tr><td id='kuva' rowspan='2'>" + TaulukkoKuva + "</td>" + 
           "<td id='paiva'>"+ date +"</td>"+
           "<td id='otsikko'>"+ Elokuva[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue +"</a></td>"+ 
@@ -91,15 +94,17 @@ function TeatteriValinta() {
           "<tr><td id='alkuaika'>" + (Elokuva[i].getElementsByTagName("dttmShowStart")[0].childNodes[0].nodeValue).slice(11,16) +"</td>" +
           "<td id='sali'>Finnkino "+ Elokuva[i].getElementsByTagName("TheatreAndAuditorium")[0].childNodes[0].nodeValue + "</td></tr>";
        }
+       //Taulukon lopetus ja sijoitus taulukko div:in sisään
        table += "</table>";   
        document.getElementById("taulukko").innerHTML = table;
+       //
        document.getElementById("Elokuvasalit").value = "";
     }
 
 
- 
-function AjanKorjaus(duration) {
-    var minuutit = duration % 60;
-    var tunnit = (duration - minuutit) / 60;
+    // Korjataan xml tiedostosta saatu aika tunneiksi ja minuuteiksi
+function AjanKorjaus(kesto) {
+    var minuutit = kesto % 60;
+    var tunnit = (kesto - minuutit) / 60;
     return tunnit + " h " + minuutit + " min";
  }
