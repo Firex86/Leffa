@@ -38,7 +38,8 @@ body {
 /* Muokataan taulukkoa */
 #taulukko {
     text-align: center;
-	font-size: 20px;
+	font-size: 25px;
+	font-style: oblique;
 	font-family: 'Courier New', Courier, monospace;
     padding-left: 30%;
     color: rgb(231, 193, 2);
