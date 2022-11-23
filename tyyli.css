@@ -31,6 +31,9 @@ body {
 /* Elokuvasali listauksen muokkaamista */
 #ElokuvasaLista {
 	text-align: center;
+	text-align: center;
+    	margin-left: auto;
+    	margin-right: auto;
 	color: rgb(231, 193, 2);
 	font-size: 25px;
 }
