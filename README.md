@@ -7,3 +7,8 @@ Sovellus käyttää Finnkinon julkaisemaa ja ylläpitämää XML databasea, jost
 # Ominaisuudet
 
 Sovelluksella on mahdollista suodattaa pääkaupunki seudun finnkino elokuvasalien tarjontaa. Sovellus näyttää suodatuksen jälkeen kyseisen salin päivän tarjonnan.
+
+
+Linkki sovellukseen: https://gleeful-longma-1f08a8.netlify.app/
+
+Projektiin on otettu vaikutteita toiminnot.js riveissä 18 - 56. https://chic-empanada-4d3c94.netlify.app/
